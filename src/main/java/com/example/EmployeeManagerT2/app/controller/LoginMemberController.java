@@ -1,5 +1,6 @@
 package com.example.EmployeeManagerT2.app.controller;
 
+import com.example.EmployeeManagerT2.app.request.loginmember.PostLoginMemberRequest;
 import com.example.EmployeeManagerT2.app.response.loginmember.*;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,11 +20,11 @@ public class LoginMemberController {
     }
 
     @PostMapping
-    public ResponseEntity<PostLoginMemberResponse> post() {
+    public ResponseEntity<PostLoginMemberResponse> post(@RequestBody PostLoginMemberRequest request) {
         return null;
     }
 
-    @PutMapping("id")
+    @PutMapping
     public ResponseEntity<PutLoginMemberResponse> put() {
         return null;
     }

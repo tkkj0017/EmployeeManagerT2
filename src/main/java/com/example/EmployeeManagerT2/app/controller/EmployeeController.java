@@ -1,5 +1,6 @@
 package com.example.EmployeeManagerT2.app.controller;
 
+import com.example.EmployeeManagerT2.app.request.employee.PostEmployeeRequest;
 import com.example.EmployeeManagerT2.app.response.employee.*;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,16 +20,16 @@ public class EmployeeController {
     }
 
     @PostMapping
-    public ResponseEntity<PostEmployeeResponse> post() {
+    public ResponseEntity<PostEmployeeResponse> post(@RequestBody PostEmployeeRequest request) {
         return null;
     }
 
-    @PutMapping("{id}")
+    @PutMapping
     public ResponseEntity<PutEmployeeResponse> put() {
         return null;
     }
 
-    @DeleteMapping("{id")
+    @DeleteMapping("{id}")
     public ResponseEntity<DeleteEmployeeResponse> delete() {
         return null;
     }
