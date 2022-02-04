@@ -1,12 +1,36 @@
 package com.example.EmployeeManagerT2.app.controller;
 
+import com.example.EmployeeManagerT2.app.response.loginmember.*;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("employee")
+@RequestMapping("login-member")
 public class LoginMemberController {
 
+    @GetMapping
+    public ResponseEntity<GetLoginMemberListResponse> getList() {
+        return null;
+    }
 
+    @GetMapping("{id}")
+    public ResponseEntity<GetLoginMemberDetailResponse> getDetail() {
+        return null;
+    }
 
+    @PostMapping
+    public ResponseEntity<PostLoginMemberResponse> post() {
+        return null;
+    }
+
+    @PutMapping("id")
+    public ResponseEntity<PutLoginMemberResponse> put() {
+        return null;
+    }
+
+    @DeleteMapping("{id}")
+    public ResponseEntity<DeleteLoginMemberResponse> delete() {
+        return  null;
+    }
 
 }
