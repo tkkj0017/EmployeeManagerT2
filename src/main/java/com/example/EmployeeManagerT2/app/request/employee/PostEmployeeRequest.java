@@ -6,13 +6,15 @@ import lombok.Data;
 public class PostEmployeeRequest {
 
     private String id;
+    private String departmentId;
     private Integer employeeNumber;
     private String lastName;
     private String firstName;
     private String lastNameKana;
-    private String firttNameKana;
-    private String departmentId;
-    private String email;
+    private String firstNameKana;
+    private String privateEmail;
+    private String businessEmail;
     private String workStyle;
     private String joinDate;
+    private String remarks;
 }
