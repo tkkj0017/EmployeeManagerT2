@@ -4,10 +4,9 @@ import com.example.EmployeeManagerT2.app.request.employee.PostEmployeeRequest;
 import com.example.EmployeeManagerT2.app.request.employee.PutEmployeeRequest;
 import com.example.EmployeeManagerT2.app.response.employee.*;
 import com.example.EmployeeManagerT2.domain.service.EmployeeService;
-import com.example.EmployeeManagerT2.inflastructure.repository.EmployeeDAO;
+import com.example.EmployeeManagerT2.inflastructure.mapper.EmployeeDAO;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 
 public class EmployeeServiceImpl implements EmployeeService {
 

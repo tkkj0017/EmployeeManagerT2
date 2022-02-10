@@ -1,11 +1,7 @@
-package com.example.EmployeeManagerT2.inflastructure.repository;
+package com.example.EmployeeManagerT2.inflastructure.mapper;
 
 import com.example.EmployeeManagerT2.app.request.employee.PostEmployeeRequest;
 import com.example.EmployeeManagerT2.app.request.employee.PutEmployeeRequest;
-import com.example.EmployeeManagerT2.app.response.employee.*;
-import com.example.EmployeeManagerT2.inflastructure.entity.employee.SelectEmployeeById;
-import com.example.EmployeeManagerT2.inflastructure.entity.employee.SelectEmployeeList;
-import org.springframework.http.ResponseEntity;
 
 public interface EmployeeDAO {
 
